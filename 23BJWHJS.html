@@ -3,6 +3,7 @@
 <head>
 	<title>Video Player</title>
 <link rel="stylesheet"  type="text/css"  href="01buttonstyle.css" >
+
 <script>
     document.onkeydown = function () {
         if (window.event && window.event.keyCode == 123) {
@@ -27,7 +28,7 @@
 <div>
 <br>
 <p>
-<h3>2023班级文化建设</h3>
+<h3>2023班级文化建设--未完工</h3>
 </p>
 
 </div>
@@ -36,13 +37,20 @@
 <!连背景也是我们自己用PPT做的哦~>
 	<video id="myVideo" width="640" height="360">
 		<source src="MFQ23SpringV.mp4" type="video/mp4">
+		<source src="23BJ0101.mp4" type="video/mp4">
+		<source src="23BJ0102.mp4" type="video/mp4">
+		<source src="23BJ0103.mp4" type="video/mp4">
+		<source src="23BJ0104.mp4" type="video/mp4">
 		<source src="GZQ.mp4" type="video/mp4">
 		<source src="23BJWHJS01huaxu.mp4" type="video/mp4">
 		<source src="bilibilierror.mp4" type="video/mp4">
+		<source src="23BJ0105.mp4" type="video/mp4">
 		Your browser does not support the video tag.
+		<!IE8 CANNOT USE VIDEO TAG><!CAUTION>
 	</video>
 	<br>
-	<button onclick="changeVideo('Nolai01.mp4')">正片1</button>
+	<!--<button onclick="changeVideo('Nolai01.mp4')">正片1</button>-->
+	<button onclick="VDOPLVideo()">正片1</button>
 	<button onclick="changeVideo('bilibilierror.mp4')">正片2</button>
 	<button onclick="changeVideo('23BJWHJS01huaxu.mp4')">花絮1</button>
 	<button onclick="changeVideo('23BJWHJS02huaxu.mp4')">花絮2</button>
@@ -54,6 +62,36 @@
 			video.play();
 		}
 	</script>
+		<script>
+			function VDOPLVideo() {
+				var video = document.getElementById("myVideo");
+				video.src = '23BJ0101.mp4';
+				video.load();
+				video.play();
+                                                 
+//有问题
+
+				video.src = '23BJ0102.mp4';
+				video.load();
+				video.play();
+                                                 
+	
+
+				video.src = '23BJ0103.mp4';
+				video.load();
+				video.play();
+                                                 
+				video.src = '23BJ0104.mp4';
+				video.load();
+				video.play();
+                                                 
+				video.src = '23BJ0105.mp4';
+				video.load();
+				video.play(); 
+                                               
+				//FK
+			}
+		</script>
 <!摆烂了，反正源代码都会被盗，直接开源罢（doge）>
 </div>
 </center>
