@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Qxxb Video Player 1.14.5</title>
+<link rel="stylesheet"  type="text/css"  href="01buttonstyle.css" >
+<script>
+    document.onkeydown = function () {
+        if (window.event && window.event.keyCode == 123) {
+            alert("F12被禁用");
+            event.keyCode = 0;
+            event.returnValue = false;
+        }
+        if (window.event && window.event.keyCode == 13) {
+            window.event.keyCode = 505;
+        }
+        if (window.event && window.event.keyCode == 8) {
+            alert(str + "\n请使用Del键进行字符的删除操作！");
+            window.event.returnValue = false;
+        }
+    }
+</script>
+<link rel="stylesheet"  type="text/css"  href="bgcss.css" >
+<script disable-devtool-auto src='msage.js'></script>
+<link rel="icon" type="image/x-icon" href="classfavicon.ico">
+</head>
+<center>
+<div>
+<br>
+<p>
+<h3>2023暑假优秀VLOG</h3>
+<h4>如果点击按钮视频没有出现，请耐心等候视频加载完毕或者刷新页面并重复上述步骤！</h4>
+</p>
+
+</div>
+<div>
+<body>
+	<video id="myVideo" width="640" height="360">
+		<source src="MFQ23SpringV.mp4" type="video/mp4">
+		<source src="GZQ.mp4" type="video/mp4">
+		<source src="LQW.mp4" type="video/mp4">
+		<source src="XZL.mp4" type="video/mp4">
+		<source src="nolai2309sv.vl.vi..mp4" type="video/mp4">
+		Your browser does not support the video tag.
+	</video>
+	<br>
+	<button onclick="changeVideo('nolai2309sv.vl.vi..mp4')">侯家隽春节VLOG</button>
+	<button onclick="changeVideo('MFQ23SpringV.mp4')">孟凡淇春节VLOG</button>
+	<button onclick="changeVideo('GZQ.mp4')">甘子晴春节VLOG</button>
+	<button onclick="changeVideo('LQW.mp4')">梁绮雯春节VLOG</button>
+	<button onclick="changeVideo('XZL.mp4')">徐芷蕾春节VLOG</button>
+
+	<script>
+		function changeVideo(src) {
+			var video = document.getElementById("myVideo");
+			video.src = src;
+			video.load();
+			video.play();
+		}
+</script>
+</div>
+<br>
+
+
+</center>
+</body>
+</html>
